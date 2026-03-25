@@ -1,0 +1,1 @@
+select * from "dev"."main"."stg_programs"

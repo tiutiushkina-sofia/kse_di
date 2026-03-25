@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_campaigns" ("campaign_id" integer,"campaign_name" text,"platform" text,"budget" integer,"start_date" date)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_campaigns" FROM '/Users/sofiatiutiuskina/PycharmProjects/DataEngineering/Practice/11Practice/kse_admissions/seeds/raw_campaigns.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

@@ -1,0 +1,1 @@
+select * from "dev"."main"."raw_campaigns"

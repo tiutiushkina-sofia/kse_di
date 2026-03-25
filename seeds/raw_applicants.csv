@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_applicants" ("applicant_id" integer,"lead_source" text,"target_program_id" integer,"registration_date" date)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_applicants" FROM '/Users/sofiatiutiuskina/PycharmProjects/DataEngineering/Practice/11Practice/kse_admissions/seeds/raw_applicants.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

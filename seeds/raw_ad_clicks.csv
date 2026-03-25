@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_ad_clicks" ("click_id" integer,"applicant_id" integer,"campaign_id" integer,"click_timestamp" timestamp without time zone,"device_type" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_ad_clicks" FROM '/Users/sofiatiutiuskina/PycharmProjects/DataEngineering/Practice/11Practice/kse_admissions/seeds/raw_ad_clicks.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

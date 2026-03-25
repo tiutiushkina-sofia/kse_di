@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_programs" ("program_id" integer,"program_name" text,"degree" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_programs" FROM '/Users/sofiatiutiuskina/PycharmProjects/DataEngineering/Practice/11Practice/kse_admissions/seeds/raw_programs.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

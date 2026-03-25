@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_applications" ("application_id" integer,"applicant_id" integer,"status" text,"status_updated_at" date)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_applications" FROM '/Users/sofiatiutiuskina/PycharmProjects/DataEngineering/Practice/11Practice/kse_admissions/seeds/raw_applications.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
